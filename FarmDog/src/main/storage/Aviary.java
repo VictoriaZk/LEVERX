@@ -11,8 +11,7 @@ public class Aviary {
     private List<Dog> dogs;
 
     public Aviary(List<Dog> dogs) {
-        dogs = new ArrayList<>();
-        this.dogs = dogs;
+        this.dogs = new ArrayList<>(dogs);
     }
 
     public List<Dog> getDogs() {
