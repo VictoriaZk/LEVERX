@@ -9,7 +9,7 @@ public enum Job {
         this.job = job;
     }
 
-    public String getJob(){
+    public String getJob() {
         return job;
     }
 }

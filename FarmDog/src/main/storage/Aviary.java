@@ -22,12 +22,12 @@ public class Aviary {
         this.dogs = dogs;
     }
 
-    public void add(Dog dog){
+    public void add(Dog dog) {
         dogs.add(dog);
         System.out.println(DOG_IN_THE_AVIARY);
     }
 
-    public void remove(Dog dog){
+    public void remove(Dog dog) {
         dogs.remove(dog);
         System.out.println(DOG_GO_OUT);
     }

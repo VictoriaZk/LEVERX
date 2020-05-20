@@ -36,8 +36,7 @@ public class PersonnelServiceImpl implements PersonnelService {
         if (dog.isDirty()) {
             dog.setDirty(false);
             System.out.println(WASHED);
-        }
-        else{
+        } else {
             System.out.println(CLEAN_DOG);
         }
     }

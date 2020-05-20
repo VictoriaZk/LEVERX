@@ -1,6 +1,5 @@
 package controller;
 
-import storage.Aviary;
 import entity.Command;
 import entity.Dog;
 import service.DoctorService;
@@ -9,6 +8,7 @@ import service.TrainerService;
 import service.impl.DoctorServiceImpl;
 import service.impl.PersonnelServiceImpl;
 import service.impl.TrainerServiceImpl;
+import storage.Aviary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +43,7 @@ public class Controller {
             personnelService.feed(dog);
             aviary.add(dog);
             System.out.println(GO_TO_SLEEP);
-            System.out.println( "---------");
+            System.out.println("---------");
         }
 
     }
