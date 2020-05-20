@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/*status "TRUE" if command is possible for learn
+status "FALSE if command can not learnt right now
+ */
 public class ControllerCommand {
     private static final String SIT = "sit";
     private static final String GIVE_PAW = "give a paw";
@@ -19,15 +22,15 @@ public class ControllerCommand {
     private Builder builder = BuilderFactory.create("command");
 
     public ControllerCommand() {
-        commands = new ArrayList<>();
-        commands.add((Command) builder.build(Arrays.asList(SIT, FALSE)));
-        commands.add((Command) builder.build(Arrays.asList(SIT, TRUE)));
-        commands.add((Command) builder.build(Arrays.asList(GIVE_PAW, TRUE)));
-        commands.add((Command) builder.build(Arrays.asList(GIVE_PAW, FALSE)));
-        commands.add((Command) builder.build(Arrays.asList(LAY, TRUE)));
-        commands.add((Command) builder.build(Arrays.asList(LAY, FALSE)));
-        commands.add((Command) builder.build(Arrays.asList(VOICE, TRUE)));
-        commands.add((Command) builder.build(Arrays.asList(VOICE, FALSE)));
+        this.commands = new ArrayList<>();
+        this.commands.add((Command) builder.build(Arrays.asList(SIT, FALSE)));
+        this.commands.add((Command) builder.build(Arrays.asList(SIT, TRUE)));
+        this.commands.add((Command) builder.build(Arrays.asList(GIVE_PAW, TRUE)));
+        this.commands.add((Command) builder.build(Arrays.asList(GIVE_PAW, FALSE)));
+        this.commands.add((Command) builder.build(Arrays.asList(LAY, TRUE)));
+        this.commands.add((Command) builder.build(Arrays.asList(LAY, FALSE)));
+        this.commands.add((Command) builder.build(Arrays.asList(VOICE, TRUE)));
+        this.commands.add((Command) builder.build(Arrays.asList(VOICE, FALSE)));
     }
 
     public List<Command> getCommands() {
