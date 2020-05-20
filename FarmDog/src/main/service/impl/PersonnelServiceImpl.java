@@ -4,9 +4,9 @@ import entity.Dog;
 import service.PersonnelService;
 
 public class PersonnelServiceImpl implements PersonnelService {
-    private static final String YOUNG_FEED = "feed for little dogs";
-    private static final String AVERAGE_FEED = "feed for average dogs";
-    private static final String ADULT_FEED = "feed for adult dogs";
+    private static final String YOUNG_FEED = "Dog eat feed for little dogs";
+    private static final String AVERAGE_FEED = "Dog eat feed for average dogs";
+    private static final String ADULT_FEED = "Dog eat feed for adult dogs";
     private static final String NOT_HUNGRY = "Dog is not hungry!";
     private static final String WASHED = "Dog is washed!";
     private static final String CLEAN_DOG = "Dog is clean!";
