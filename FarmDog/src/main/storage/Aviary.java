@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Aviary {
-    public static final String DOG_IN_THE_AVIARY = "Dog in the aviary!";
-    public static final String DOG_GO_OUT = "Dog go out! ";
+    private static final String DOG_IN_THE_AVIARY = "Dog in the aviary!";
+    private static final String DOG_GO_OUT = "Dog go out! ";
     private List<Dog> dogs;
 
     public Aviary(List<Dog> dogs) {
@@ -31,12 +31,5 @@ public class Aviary {
         dogs.remove(dog);
         System.out.println(DOG_GO_OUT);
     }
-
-    /*public boolean isDogInAviary(Dog dog){
-        dogs.stream()
-                .filter(d -> d.equals(dog))
-                .findAny()
-                .orElse(System.out.println:: ()
-    }*/
 
 }
