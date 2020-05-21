@@ -5,9 +5,10 @@ import entity.Dog;
 import java.util.ArrayList;
 import java.util.List;
 
+import static constants.DogConstants.DOG_GO_OUT;
+import static constants.DogConstants.DOG_IN_THE_AVIARY;
+
 public class Aviary {
-    private static final String DOG_IN_THE_AVIARY = "Dog in the aviary!";
-    private static final String DOG_GO_OUT = "Dog go out! ";
     private List<Dog> dogs;
 
     public Aviary(List<Dog> dogs) {
@@ -24,12 +25,12 @@ public class Aviary {
 
     public void add(Dog dog) {
         dogs.add(dog);
-        System.out.println(DOG_IN_THE_AVIARY);
+        System.out.println(DOG_IN_THE_AVIARY.getFieldName());
     }
 
     public void remove(Dog dog) {
         dogs.remove(dog);
-        System.out.println(DOG_GO_OUT);
+        System.out.println(DOG_GO_OUT.getFieldName());
     }
 
 }

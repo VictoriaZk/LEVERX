@@ -1,7 +1,10 @@
 package entity;
 
 public enum Job {
-    POLICE("police"), MEDICINE("medicine"), SHOW("show"), NONE("none");
+    POLICE("police"),
+    MEDICINE("medicine"),
+    SHOW("show"),
+    NONE("none");
 
     private final String job;
 

@@ -39,6 +39,7 @@ public class Controller {
             personnelService.wash(dog);
             doctorService.treat(dog);
             trainerService.train(dog, commands.get(random.nextInt(commands.size())));
+            trainerService.train(dog, commands.get(random.nextInt(commands.size())));
             System.out.println(GO_TO_WORK_IN_THE + dog.getPlaceOfWork());
             personnelService.feed(dog);
             aviary.add(dog);
