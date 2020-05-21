@@ -14,11 +14,11 @@ import java.util.List;
 import static constants.BooleanConstants.FALSE;
 import static constants.BooleanConstants.TRUE;
 
-public class ControllerDog {
+public class DogController {
     private List<Dog> dogs;
     private Builder builder = BuilderFactory.create(DogConstants.DOG.getFieldName());
 
-    public ControllerDog() {
+    public DogController() {
         this.dogs = new ArrayList<>();
         this.dogs.add((Dog) builder.build(Arrays.asList("John", "8", TRUE.getFieldName(), TRUE.getFieldName(),
                 TRUE.getFieldName(), FALSE.getFieldName(), Job.POLICE.getJob())));

@@ -25,11 +25,11 @@ public class Controller {
         TrainerService trainerService = new TrainerServiceImpl();
         DoctorService doctorService = new DoctorServiceImpl();
 
-        ControllerDog controllerDog = new ControllerDog();
-        List<Dog> dogs = new ArrayList<>(controllerDog.getDogs());
+        DogController dogController = new DogController();
+        List<Dog> dogs = new ArrayList<>(dogController.getDogs());
         Aviary aviary = new Aviary(dogs);
-        ControllerCommand controllerCommand = new ControllerCommand();
-        List<Command> commands = new ArrayList<>(controllerCommand.getCommands());
+        CommandController commandController = new CommandController();
+        List<Command> commands = new ArrayList<>(commandController.getCommands());
 
 
         for (Dog dog : dogs) {

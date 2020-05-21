@@ -15,11 +15,11 @@ import static constants.BooleanConstants.TRUE;
 /*status "TRUE" if command is possible for learn
 status "FALSE if command can not learnt right now
  */
-public class ControllerCommand {
+public class CommandController {
     private List<Command> commands;
     private Builder builder = BuilderFactory.create(CommandConstants.COMMAND.getFieldName());
 
-    public ControllerCommand() {
+    public CommandController() {
         this.commands = new ArrayList<>();
         this.commands.add((Command) builder.build(Arrays.asList(CommandConstants.SIT.getFieldName(), FALSE.getFieldName())));
         this.commands.add((Command) builder.build(Arrays.asList(CommandConstants.SIT.getFieldName(), TRUE.getFieldName())));
